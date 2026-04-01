@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "centre-de-documentation-client-side-solution",
+    "id": "aa457325-5d72-4fca-a352-01865c39385d",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.17.4"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Centre de documentation description"
+      },
+      "longDescription": {
+        "default": "Centre de documentation description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "centre-de-documentation Feature",
+        "description": "The feature that activates elements of the centre-de-documentation solution.",
+        "id": "46da583e-6b41-4839-b1d6-0491999b4393",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/centre-de-documentation.sppkg"
+  }
+}

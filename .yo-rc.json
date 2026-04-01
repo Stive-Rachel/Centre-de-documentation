@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "16.20.2",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.9.1"
+    },
+    "version": "1.17.4",
+    "libraryName": "centre-de-documentation",
+    "libraryId": "aa457325-5d72-4fca-a352-01865c39385d",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "Centre de documentation",
+    "solutionShortDescription": "Centre de documentation description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

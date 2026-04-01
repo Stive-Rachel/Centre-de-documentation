@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "centre-de-documentation-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/centreDeDocumentation/CentreDeDocumentationWebPart.js",
+          "manifest": "./src/webparts/centreDeDocumentation/CentreDeDocumentationWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "CentreDeDocumentationWebPartStrings": "lib/webparts/centreDeDocumentation/loc/{locale}.js"
+  }
+}
