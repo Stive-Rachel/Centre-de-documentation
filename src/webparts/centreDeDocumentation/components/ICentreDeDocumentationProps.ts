@@ -4,4 +4,6 @@ export interface ICentreDeDocumentationProps {
   environmentMessage: string;
   hasTeamsContext: boolean;
   userDisplayName: string;
+  initialModuleId?: string;
+  initialSectionId?: string;
 }

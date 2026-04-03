@@ -14,7 +14,8 @@ const HomePage: React.FC<IHomePageProps> = ({ modules, onSelectModule }) => {
   };
 
   const isModuleComplete = (moduleId: string): boolean => {
-    return moduleId.toUpperCase() === 'GNC';
+    const completedModules = ['ACT', 'BIO', 'EPP', 'FOR', 'GAT', 'GDA', 'GDI', 'GDR', 'GED', 'GNC', 'MGP', 'PAR', 'PAS', 'PES', 'SGP', 'SIG', 'SIP'];
+    return completedModules.indexOf(moduleId.toUpperCase()) > -1;
   };
 
   return (

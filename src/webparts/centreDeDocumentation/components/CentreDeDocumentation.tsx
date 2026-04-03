@@ -18,8 +18,16 @@ export default class CentreDeDocumentation extends React.Component<
   public constructor(props: ICentreDeDocumentationProps) {
     super(props);
 
+    const validSections = ['note-technique', 'guide-utilisateur', 'documentation-technique'];
+    const hasInitialParams = !!props.initialModuleId;
+    const initialSectionId = props.initialSectionId && validSections.indexOf(props.initialSectionId) > -1
+      ? props.initialSectionId as IActiveSelection['sectionId']
+      : 'note-technique';
+
     this.state = {
-      activeSelection: undefined
+      activeSelection: hasInitialParams
+        ? { moduleId: props.initialModuleId as string, sectionId: initialSectionId }
+        : undefined
     };
   }
 

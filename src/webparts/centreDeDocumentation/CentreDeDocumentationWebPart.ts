@@ -22,6 +22,10 @@ export default class CentreDeDocumentationWebPart extends BaseClientSideWebPart<
   private _environmentMessage: string = '';
 
   public render(): void {
+    const urlParams = new URLSearchParams(window.location.search);
+    const initialModuleId = urlParams.get('module') || undefined;
+    const initialSectionId = urlParams.get('section') || undefined;
+
     const element: React.ReactElement<ICentreDeDocumentationProps> = React.createElement(
       CentreDeDocumentation,
       {
@@ -29,7 +33,9 @@ export default class CentreDeDocumentationWebPart extends BaseClientSideWebPart<
         isDarkTheme: this._isDarkTheme,
         environmentMessage: this._environmentMessage,
         hasTeamsContext: !!this.context.sdks.microsoftTeams,
-        userDisplayName: this.context.pageContext.user.displayName
+        userDisplayName: this.context.pageContext.user.displayName,
+        initialModuleId,
+        initialSectionId
       }
     );
 
